@@ -1,0 +1,20 @@
+{
+    "manufacturer": "",
+    "name": "NTC",
+    "pins": {
+        "a5536907-3585-4f58-aa99-9bae0c0e01a6": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A",
+            "swap_group": 0
+        },
+        "fb567b0c-0f3e-4b2a-b002-03a73425a132": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "B",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "3b9de1f3-8c08-45d8-a3f4-eda141aa29b8"
+}

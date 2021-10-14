@@ -1,0 +1,56 @@
+{
+    "manufacturer": "Texas Instruments",
+    "name": "AMC1311",
+    "pins": {
+        "13b04c8f-5296-4a43-9b92-5784592415ff": {
+            "direction": "output",
+            "names": [],
+            "primary_name": "VOUTN",
+            "swap_group": 0
+        },
+        "1ff7f8c0-bf49-41e1-9254-51fb38d238db": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND1",
+            "swap_group": 0
+        },
+        "291f9c19-160c-4e3f-8d58-96329a7257e7": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND2",
+            "swap_group": 0
+        },
+        "44337c3f-0449-4aef-b350-8435250b67f7": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "VIN",
+            "swap_group": 0
+        },
+        "5130ccbf-34ac-4bd1-90a6-5c9fe58472d2": {
+            "direction": "output",
+            "names": [],
+            "primary_name": "VOUTP",
+            "swap_group": 0
+        },
+        "c09051c5-3666-4595-addd-571c1b087148": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD1",
+            "swap_group": 0
+        },
+        "d49d4aaf-a84a-441c-98f6-228f1219e8ac": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD2",
+            "swap_group": 0
+        },
+        "e0d54898-3ffc-4844-b468-9162a35859e0": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "SHTDN",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "117461c9-c88d-4ee7-87a3-3f2fc3328b78"
+}

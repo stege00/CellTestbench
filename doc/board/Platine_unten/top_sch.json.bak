@@ -1,0 +1,186 @@
+{
+    "annotation": {
+        "fill_gaps": true,
+        "ignore_unknown": false,
+        "keep": true,
+        "mode": "sheet_100",
+        "order": "right_down"
+    },
+    "block": "a44b1bb8-cab8-4ffd-b7d1-80ff798d3f5b",
+    "group_tag_visible": false,
+    "name": "",
+    "pdf_export_settings": {
+        "min_line_width": 0,
+        "output_filename": ""
+    },
+    "rules": {
+        "single_pin_net": {
+            "enabled": true,
+            "include_unnamed": true,
+            "order": -1
+        }
+    },
+    "sheets": {
+        "e332cae2-fe07-4691-b6ba-c3c8917f4bae": {
+            "arcs": {},
+            "bus_labels": {},
+            "bus_rippers": {},
+            "index": 1,
+            "junctions": {
+                "7de272db-ef79-4e9c-ac2a-c7225b53292c": {
+                    "position": [
+                        62500000,
+                        21250000
+                    ]
+                },
+                "85a01bee-4132-430e-85e0-f74d77dd4399": {
+                    "position": [
+                        80000000,
+                        17500000
+                    ]
+                },
+                "c4be5cc0-bf84-4a39-b684-8e2f87bb9515": {
+                    "position": [
+                        60000000,
+                        17500000
+                    ]
+                },
+                "d60a0a6d-03dc-40f0-b319-4f26fb4ef398": {
+                    "position": [
+                        82500000,
+                        21250000
+                    ]
+                }
+            },
+            "lines": {},
+            "name": "First sheet",
+            "net_labels": {},
+            "net_lines": {
+                "0a0fc54a-2315-4834-8d72-0ec27047ecfb": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": "7de272db-ef79-4e9c-ac2a-c7225b53292c",
+                        "pin": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": "d60a0a6d-03dc-40f0-b319-4f26fb4ef398",
+                        "pin": null
+                    }
+                },
+                "1e98c950-4a5c-42fb-9f89-5cc1fc145e4a": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": "d60a0a6d-03dc-40f0-b319-4f26fb4ef398",
+                        "pin": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "fe083cfa-c01b-42db-b934-0b081e4d4939/b3cef4f5-fe6c-45b5-b063-1618f997168f"
+                    }
+                },
+                "3302456c-9aa7-44a0-8aa4-dc7198a215b7": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": "c4be5cc0-bf84-4a39-b684-8e2f87bb9515",
+                        "pin": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": "85a01bee-4132-430e-85e0-f74d77dd4399",
+                        "pin": null
+                    }
+                },
+                "63ef3c83-5401-4b10-82dc-f86d1a412706": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": "7de272db-ef79-4e9c-ac2a-c7225b53292c",
+                        "pin": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "1d7a6340-e577-4ddb-9d4b-f84fdf330a41/b3cef4f5-fe6c-45b5-b063-1618f997168f"
+                    }
+                },
+                "dca0f83e-b074-4b52-abac-d9ae67324a84": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": "85a01bee-4132-430e-85e0-f74d77dd4399",
+                        "pin": null
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "fe083cfa-c01b-42db-b934-0b081e4d4939/588536f1-9e96-4500-bcbb-4ba48082b643"
+                    }
+                },
+                "e85622cd-03ac-4930-ab58-3ec2e6bd7390": {
+                    "from": {
+                        "bus_ripper": null,
+                        "junc": null,
+                        "pin": "1d7a6340-e577-4ddb-9d4b-f84fdf330a41/588536f1-9e96-4500-bcbb-4ba48082b643"
+                    },
+                    "to": {
+                        "bus_ripper": null,
+                        "junc": "c4be5cc0-bf84-4a39-b684-8e2f87bb9515",
+                        "pin": null
+                    }
+                }
+            },
+            "power_symbols": {},
+            "symbols": {
+                "1d7a6340-e577-4ddb-9d4b-f84fdf330a41": {
+                    "component": "6514bb67-4d3d-489a-8866-579be6e15539",
+                    "display_all_pads": false,
+                    "display_directions": false,
+                    "expand": 0,
+                    "gate": "eb7f68b1-6fba-4a35-a470-2cecb23fe087",
+                    "pin_display_mode": "selected_only",
+                    "placement": {
+                        "angle": 49152,
+                        "mirror": false,
+                        "shift": [
+                            61250000,
+                            31250000
+                        ]
+                    },
+                    "smashed": false,
+                    "symbol": "5b7a580f-fa81-4cde-84c2-9da30ebc9c5a",
+                    "texts": []
+                },
+                "fe083cfa-c01b-42db-b934-0b081e4d4939": {
+                    "component": "057cc21e-ba96-4e35-be04-aa0a1c84ec1e",
+                    "display_all_pads": false,
+                    "display_directions": false,
+                    "expand": 0,
+                    "gate": "eb7f68b1-6fba-4a35-a470-2cecb23fe087",
+                    "pin_display_mode": "selected_only",
+                    "placement": {
+                        "angle": 49152,
+                        "mirror": false,
+                        "shift": [
+                            81250000,
+                            31250000
+                        ]
+                    },
+                    "smashed": false,
+                    "symbol": "5b7a580f-fa81-4cde-84c2-9da30ebc9c5a",
+                    "texts": []
+                }
+            },
+            "texts": {},
+            "title_block_values": {}
+        }
+    },
+    "title_block_values": {
+        "author": "stege",
+        "date": "2021-01-17",
+        "project_name": "Platine_unten",
+        "project_title": "Kontaktplatine",
+        "rev": "1"
+    },
+    "type": "schematic_block",
+    "uuid": "df41700f-71bf-4507-876f-d804e0f9bd17"
+}

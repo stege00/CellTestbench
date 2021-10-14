@@ -1,0 +1,32 @@
+{
+    "arcs": {},
+    "can_expand": false,
+    "junctions": {},
+    "lines": {},
+    "name": "DHBW_ENGINEERING_LOGO",
+    "pins": {},
+    "polygons": {},
+    "text_placements": {},
+    "texts": {
+        "23c871ff-bb5c-4375-8958-696a002bef45": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 0,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            },
+            "size": 1500000,
+            "text": "DHBW Engineering Logo",
+            "width": 200000
+        }
+    },
+    "type": "symbol",
+    "unit": "4f0b02e9-b321-420e-9024-14481e191db9",
+    "uuid": "871dd0c2-6b3d-46ea-93e7-6e130b2774fd"
+}

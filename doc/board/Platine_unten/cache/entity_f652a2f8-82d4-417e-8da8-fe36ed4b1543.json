@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "b0002116-2975-4fd3-90ad-9bc6cd61657b": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "117461c9-c88d-4ee7-87a3-3f2fc3328b78"
+        }
+    },
+    "manufacturer": "Texas Instruments",
+    "name": "AMC1311",
+    "prefix": "IC",
+    "tags": [],
+    "type": "entity",
+    "uuid": "f652a2f8-82d4-417e-8da8-fe36ed4b1543"
+}

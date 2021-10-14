@@ -1,0 +1,233 @@
+{
+    "arcs": {},
+    "default_model": "238e6c1e-3b86-466a-802d-0ca7c96401bc",
+    "dimensions": {},
+    "junctions": {
+        "01ae1486-58b4-4be4-b05c-5fe99013ef04": {
+            "position": [
+                -1250000,
+                -6250000
+            ]
+        },
+        "0cb7a0d0-a03a-45d5-a21e-91b99c9e7958": {
+            "position": [
+                -5000000,
+                9050000
+            ]
+        },
+        "353b3a5b-1d06-4242-a844-05301917bf7d": {
+            "position": [
+                2500000,
+                -6250000
+            ]
+        },
+        "36d2a387-90bd-45de-9b8b-c0e306903ca7": {
+            "position": [
+                5000000,
+                -6250000
+            ]
+        },
+        "393f5446-6860-4139-bc25-3f42380d0837": {
+            "position": [
+                1250000,
+                -5000000
+            ]
+        },
+        "44291968-76c3-4a53-b701-d48e5a78968b": {
+            "position": [
+                -5000000,
+                -6250000
+            ]
+        },
+        "4de01c67-0f8a-4dd1-bb8a-dc2168baf239": {
+            "position": [
+                2500000,
+                -5000000
+            ]
+        },
+        "8f97c53e-36e8-404b-99df-1308de49f4b1": {
+            "position": [
+                1250000,
+                -6250000
+            ]
+        },
+        "a1eb400b-dd9c-40e7-8890-32ebdca13088": {
+            "position": [
+                -1250000,
+                -5000000
+            ]
+        },
+        "afe59487-e958-4348-8d65-456f41bb5cd4": {
+            "position": [
+                -5000000,
+                -6250000
+            ]
+        },
+        "c6bbbc92-8161-47f1-900c-c1ba61f03f38": {
+            "position": [
+                5000000,
+                9050000
+            ]
+        },
+        "e1c1e1f5-24b1-413e-887d-af864f33ee68": {
+            "position": [
+                5000000,
+                -6250000
+            ]
+        }
+    },
+    "keepouts": {},
+    "lines": {
+        "10b88cb7-bbbd-4f9c-a864-bf91a707df0c": {
+            "from": "393f5446-6860-4139-bc25-3f42380d0837",
+            "layer": 20,
+            "to": "8f97c53e-36e8-404b-99df-1308de49f4b1",
+            "width": 100000
+        },
+        "241331f0-ec88-49de-8565-f1ce6c431565": {
+            "from": "a1eb400b-dd9c-40e7-8890-32ebdca13088",
+            "layer": 20,
+            "to": "393f5446-6860-4139-bc25-3f42380d0837",
+            "width": 100000
+        },
+        "34100f94-72d6-4b1d-95cb-1f91aae9c17c": {
+            "from": "0cb7a0d0-a03a-45d5-a21e-91b99c9e7958",
+            "layer": 20,
+            "to": "c6bbbc92-8161-47f1-900c-c1ba61f03f38",
+            "width": 100000
+        },
+        "350d4fe0-128d-43f5-b0a7-27db582c404c": {
+            "from": "01ae1486-58b4-4be4-b05c-5fe99013ef04",
+            "layer": 20,
+            "to": "a1eb400b-dd9c-40e7-8890-32ebdca13088",
+            "width": 100000
+        },
+        "3ed4b430-8961-4eda-97ee-9cbeaaf2dba3": {
+            "from": "c6bbbc92-8161-47f1-900c-c1ba61f03f38",
+            "layer": 20,
+            "to": "e1c1e1f5-24b1-413e-887d-af864f33ee68",
+            "width": 100000
+        },
+        "7628997e-84b9-476f-9bc0-bee63265fcbc": {
+            "from": "44291968-76c3-4a53-b701-d48e5a78968b",
+            "layer": 20,
+            "to": "36d2a387-90bd-45de-9b8b-c0e306903ca7",
+            "width": 100000
+        },
+        "b720b8ee-469c-40f8-8079-7fa371cce624": {
+            "from": "353b3a5b-1d06-4242-a844-05301917bf7d",
+            "layer": 20,
+            "to": "4de01c67-0f8a-4dd1-bb8a-dc2168baf239",
+            "width": 100000
+        },
+        "f6e1f531-1575-44cb-a8e2-b516c14e9021": {
+            "from": "afe59487-e958-4348-8d65-456f41bb5cd4",
+            "layer": 20,
+            "to": "0cb7a0d0-a03a-45d5-a21e-91b99c9e7958",
+            "width": 100000
+        }
+    },
+    "manufacturer": "Molex",
+    "models": {
+        "238e6c1e-3b86-466a-802d-0ca7c96401bc": {
+            "filename": "3d_models/connector/molex/mini-fit/1726480102.step",
+            "pitch": 0,
+            "roll": 49152,
+            "x": 0,
+            "y": -6600000,
+            "yaw": 0,
+            "z": 0
+        }
+    },
+    "name": "1726480102",
+    "pads": {
+        "56b3d04c-1172-4e98-857d-5df99fc7d296": {
+            "name": "3",
+            "padstack": "762c84c2-187d-454a-af81-d3381bec5257",
+            "parameter_set": {
+                "hole_diameter": 3000000
+            },
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "5aa404c1-d055-402d-9e08-3c6923a94998": {
+            "name": "2",
+            "padstack": "296cf69b-9d53-45e4-aaab-4aedf4087d3a",
+            "parameter_set": {
+                "hole_diameter": 1800000,
+                "pad_diameter": 2800000
+            },
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -2100000,
+                    7300000
+                ]
+            }
+        },
+        "66c46fc2-67bc-404f-b341-3291f0c57975": {
+            "name": "1",
+            "padstack": "982142aa-2883-4fd0-9b0b-37eb5a37dd35",
+            "parameter_set": {
+                "hole_diameter": 1800000,
+                "pad_height": 2800000,
+                "pad_width": 2800000,
+                "via_diameter": 1800000
+            },
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    2100000,
+                    7300000
+                ]
+            }
+        }
+    },
+    "parameter_program": "",
+    "parameter_set": {},
+    "polygons": {},
+    "rules": {
+        "clearance_package": {
+            "clearance_silkscreen_cu": 200000,
+            "clearance_silkscreen_pkg": 200000,
+            "enabled": true,
+            "order": -1
+        },
+        "package_checks": {
+            "enabled": true,
+            "order": -1
+        }
+    },
+    "tags": [
+        "mini-fit"
+    ],
+    "texts": {
+        "30dbbe31-ce50-47db-8e0a-bd17fe3594c3": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 20,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -5000000,
+                    10000000
+                ]
+            },
+            "size": 1000000,
+            "text": "$RD",
+            "width": 100000
+        }
+    },
+    "type": "package",
+    "uuid": "7dcc05e3-65ea-4458-9ed9-4023ba0bb352"
+}

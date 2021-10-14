@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "18577ce5-cb6f-4768-b874-a92e4e493f5d": {
+            "name": "",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "9539f35c-4586-4f99-b262-3198edd7922a"
+        }
+    },
+    "manufacturer": "Texas Instruments",
+    "name": "ADS8319",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "3e81c81c-3917-4302-8ff0-498cddbc19d1"
+}

@@ -1,0 +1,45 @@
+{
+    "MPN": [
+        false,
+        "1726480103"
+    ],
+    "datasheet": [
+        false,
+        "http://www.molex.com/webdocs/datasheets/pdf/en-us/1726480103_PCB_HEADERS.pdf"
+    ],
+    "description": [
+        false,
+        "Mini-Fit Jr. 3 Pin 1 Row Right Angle"
+    ],
+    "entity": "dac08463-17e8-4eb3-b5b4-4d7be5775379",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Molex"
+    ],
+    "model": "a831c0e6-3065-4f03-ab63-490ff0529ad5",
+    "package": "c5510400-1813-42c1-887d-dcee49cc1e75",
+    "pad_map": {
+        "185fb3cb-1cb7-46f2-b5f4-243ab9bb1726": {
+            "gate": "6cbea03f-31ec-49ea-9903-b9bf7b26e340",
+            "pin": "4c0e5d34-b007-432d-880b-3a3b8e963a14"
+        },
+        "5aa404c1-d055-402d-9e08-3c6923a94998": {
+            "gate": "6cbea03f-31ec-49ea-9903-b9bf7b26e340",
+            "pin": "1803365d-f745-4921-a54f-c5df6afa6561"
+        },
+        "66c46fc2-67bc-404f-b341-3291f0c57975": {
+            "gate": "6cbea03f-31ec-49ea-9903-b9bf7b26e340",
+            "pin": "b22250f7-9956-4ac8-ada1-725b7ba800c8"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "021cec17-50b0-4fa7-912f-f6b12f0fd206",
+    "value": [
+        false,
+        ""
+    ]
+}

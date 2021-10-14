@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "5c9b38f8-0762-4219-98a5-4e48fdc1d420": {
+            "name": "",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "4f0b02e9-b321-420e-9024-14481e191db9"
+        }
+    },
+    "manufacturer": "DHBW_ENGINEERING",
+    "name": "DHBW_ENGINEERING_LOGO",
+    "prefix": "LOGO",
+    "tags": [],
+    "type": "entity",
+    "uuid": "8700d38c-dda0-4584-a746-a2e03071e5b7"
+}

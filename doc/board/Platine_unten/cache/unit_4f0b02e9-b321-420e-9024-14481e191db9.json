@@ -1,0 +1,14 @@
+{
+    "manufacturer": "DHBW_ENGINEERING",
+    "name": "DHBW_ENGINEERING_LOGO",
+    "pins": {
+        "51b63b65-ad17-4856-a85b-17e029f81d05": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "1",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "4f0b02e9-b321-420e-9024-14481e191db9"
+}

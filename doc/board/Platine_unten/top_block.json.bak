@@ -1,0 +1,92 @@
+{
+    "bom_export_settings": {
+        "concrete_parts": {},
+        "csv_settings": {
+            "columns": [
+                "QTY",
+                "MPN",
+                "value",
+                "manufacturer",
+                "refdes"
+            ],
+            "order": "asc",
+            "sort_column": "refdes"
+        },
+        "orderable_MPNs": {},
+        "output_filename": ""
+    },
+    "buses": {},
+    "components": {
+        "057cc21e-ba96-4e35-be04-aa0a1c84ec1e": {
+            "connections": {
+                "eb7f68b1-6fba-4a35-a470-2cecb23fe087/588536f1-9e96-4500-bcbb-4ba48082b643": {
+                    "net": "1bdb3f3a-d7a1-40cc-a10e-ed117c47985c"
+                },
+                "eb7f68b1-6fba-4a35-a470-2cecb23fe087/b3cef4f5-fe6c-45b5-b063-1618f997168f": {
+                    "net": "ca9dbfb7-9bf7-4a0c-a670-7c9499ffc683"
+                }
+            },
+            "custom_pin_names": {},
+            "entity": "29f544a1-a789-4fe6-a1ef-29da5ba3d371",
+            "group": "00000000-0000-0000-0000-000000000000",
+            "part": "f693124d-b98f-4c5f-9912-c4f6e26d3963",
+            "pin_names": {},
+            "refdes": "J2",
+            "tag": "799174e1-6dc6-46bb-aa63-1b5a9be957ae",
+            "value": ""
+        },
+        "6514bb67-4d3d-489a-8866-579be6e15539": {
+            "connections": {
+                "eb7f68b1-6fba-4a35-a470-2cecb23fe087/588536f1-9e96-4500-bcbb-4ba48082b643": {
+                    "net": "1bdb3f3a-d7a1-40cc-a10e-ed117c47985c"
+                },
+                "eb7f68b1-6fba-4a35-a470-2cecb23fe087/b3cef4f5-fe6c-45b5-b063-1618f997168f": {
+                    "net": "ca9dbfb7-9bf7-4a0c-a670-7c9499ffc683"
+                }
+            },
+            "custom_pin_names": {},
+            "entity": "29f544a1-a789-4fe6-a1ef-29da5ba3d371",
+            "group": "00000000-0000-0000-0000-000000000000",
+            "part": "f693124d-b98f-4c5f-9912-c4f6e26d3963",
+            "pin_names": {},
+            "refdes": "J1",
+            "tag": "799174e1-6dc6-46bb-aa63-1b5a9be957ae",
+            "value": ""
+        }
+    },
+    "group_names": {},
+    "name": "",
+    "net_class_default": "14a2a7d6-4006-4050-965b-5ea69100da2e",
+    "net_classes": {
+        "14a2a7d6-4006-4050-965b-5ea69100da2e": {
+            "name": "default"
+        }
+    },
+    "nets": {
+        "1bdb3f3a-d7a1-40cc-a10e-ed117c47985c": {
+            "is_power": false,
+            "name": "",
+            "net_class": "14a2a7d6-4006-4050-965b-5ea69100da2e",
+            "power_symbol_name_visible": true,
+            "power_symbol_style": "gnd"
+        },
+        "ca9dbfb7-9bf7-4a0c-a670-7c9499ffc683": {
+            "is_power": false,
+            "name": "",
+            "net_class": "14a2a7d6-4006-4050-965b-5ea69100da2e",
+            "power_symbol_name_visible": true,
+            "power_symbol_style": "gnd"
+        }
+    },
+    "project_meta": {
+        "author": "stege",
+        "date": "2021-01-17",
+        "project_name": "Platine_unten",
+        "project_title": "Kontaktplatine",
+        "rev": "1"
+    },
+    "tag_names": {
+        "799174e1-6dc6-46bb-aa63-1b5a9be957ae": "0"
+    },
+    "uuid": "a44b1bb8-cab8-4ffd-b7d1-80ff798d3f5b"
+}

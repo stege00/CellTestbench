@@ -1,6 +1,6 @@
 function save_data(data)
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+% creates new folder under ..\data\
+% to save the given data
 command=strcat('mkdir ..\data\',date,'_',datestr(now,'HH-MM-SS'));
 system(command)
 command=strcat('cd ..\data\',date,'_',datestr(now,'HH-MM-SS'));

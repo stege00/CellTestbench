@@ -1,8 +1,9 @@
 function charge_to_SOC(com_load,com_psupply,com_temperature,discharge_voltage,charge_voltage,discharge_current,charge_current,end_current,desired_soc,cell_capacity)
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+%charge_to_SOC: Charge cell to specific state of charge with constant current.
     global stop_var
     global over_temperature_var
+    
+    % set up serial devices and start values
     device_load=serial(com_load,'BaudRate',115200);
     obj_load=load_act;
     device_psupply=serial(com_psupply,'BaudRate',57600);
@@ -12,6 +13,7 @@ function charge_to_SOC(com_load,com_psupply,com_temperature,discharge_voltage,ch
     start_time=0;
     plot_ctrl=plot_controller;
     generate_plots(plot_ctrl);
+    % discharge cell to get into starting conditions
     [charge,current,voltage,temperature,time] = discharge_cell(device_load,obj_load,device_psupply,obj_psupply,device_temperature,discharge_voltage,discharge_current,end_current,plot_ctrl);
     
     tic
@@ -19,6 +21,7 @@ function charge_to_SOC(com_load,com_psupply,com_temperature,discharge_voltage,ch
     charge(end+1)=0;
     temperature(end+1)=temp_calc(device_temperature);
     
+    % set up starting configuration of serial devices  
     set_psupplyRemote(obj_psupply,device_psupply,1);       
     set_loadInput(obj_load,device_load,0);
     set_psupplyVoltage(obj_psupply,device_psupply,charge_voltage);
@@ -30,10 +33,13 @@ function charge_to_SOC(com_load,com_psupply,com_temperature,discharge_voltage,ch
     
     tic
     while(charge(end)<=desired_soc*cell_capacity)
+        % check termination condition
         drawnow
         if or(stop_var,over_temperature_var)
             break;
         end        
+        
+        % update data + plots
         temperature(end+1)=temp_calc(device_temperature);
         [meas_voltage,meas_current]=get_psupplyValues(obj_psupply,device_psupply);
         elapsed_time=toc;tic;
@@ -43,6 +49,7 @@ function charge_to_SOC(com_load,com_psupply,com_temperature,discharge_voltage,ch
         time(end+1)=time(end)+elapsed_time;
         update_plots(plot_ctrl,charge,voltage,current,temperature,time)
     end
+    
     set_psupplyOutput(obj_psupply,device_psupply,0);
     toc;
     save_data([charge,current,voltage,temperature,time]);

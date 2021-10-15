@@ -33,7 +33,7 @@ function [charge,current,voltage,temperature,time] = charge_cell(device_load,obj
         if or(stop_var,over_temperature_var)
             break;
         end
-        % load not checked to safe time
+        % load_voltage not measured to safe time
         temperature(end+1)=temp_calc(device_temperature);
         [meas_voltage,meas_current]=get_psupplyValues(obj_psupply,device_psupply);
         elapsed_time=toc;tic;

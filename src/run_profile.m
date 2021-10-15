@@ -1,8 +1,10 @@
 function run_profile(com_load,com_psupply,com_temperature,discharge_voltage,charge_voltage,discharge_current,charge_current,profile,frequency)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% runs given profile of different cell currents with maximum or given
+% frequency
     global stop_var
     global over_temperature_var
+    
+    % set up serial devices and start values
     device_load=serial(com_load,'BaudRate',115200);
     obj_load=load_act;
     device_psupply=serial(com_psupply,'BaudRate',57600);
@@ -21,6 +23,7 @@ function run_profile(com_load,com_psupply,com_temperature,discharge_voltage,char
     temperature=[temp_calc(device_temperature)];
     time=[0];
     
+    % set up starting configuration of serial devices
     set_psupplyRemote(obj_psupply,device_psupply,1);       
     set_psupplyOutput(obj_psupply,device_psupply,0);
     set_psupplyVoltage(obj_psupply,device_psupply,charge_voltage);
@@ -34,32 +37,38 @@ function run_profile(com_load,com_psupply,com_temperature,discharge_voltage,char
 
     elapsed_time=toc;
     tic
+    
     while(len(time)<=len(profile))
+        % check termination condition
         drawnow
         if or(stop_var,over_temperature_var)
             break;
         end
-
+        
         if (profile(len(time))<0)
+            % discharge cell
             set_psupplyOutput(obj_psupply,device_psupply,0);
             set_loadCurrent(obj_load,device_load,-profile(len(time)));
             set_loadInput(obj_load,device_load,1);
             meas_voltage=meas_loadVoltage(obj_load,device_load);
             meas_current=meas_loadCurrent(obj_load,device_load);
         else
+            % charge cell
             set_loadInput(obj_load,device_load,0);
             set_psupplyCurrent(obj_psupply,device_psupply,profile(len(time)));
             set_psupplyOutput(obj_psupply,device_psupply,1);
             [meas_voltage,meas_current]=get_psupplyValues(obj_psupply,device_psupply);
         end
         while(toc<1/frequency)
+            % wait until period duration is reached
             drawnow
             if or(stop_var,over_temperature_var)
                 break;
             end
             pause(0.01)
         end
-
+        
+        % update data + plots
         elapsed_time=toc;tic;
         temperature(end+1)=temp_calc(device_temperature);
         charge(end+1)=charge(end)+meas_current*elapsed_time;
@@ -69,5 +78,7 @@ function run_profile(com_load,com_psupply,com_temperature,discharge_voltage,char
         update_plots(plot_ctrl,charge,voltage,current,temperature,time)
 
     end
-delete(instrfindall)    
+    save_data([charge,current,voltage,temperature,time]);
+    disp('finishedRunningProfil');
+    delete(instrfindall)    
 end

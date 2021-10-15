@@ -1,6 +1,5 @@
 classdef plot_controller
-    %UNTITLED5 Summary of this class goes here
-    %   Detailed explanation goes here
+    %plot_controller: responsible to represent the measured live data.
     
     properties
         fig

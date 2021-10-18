@@ -1,7 +1,7 @@
 # DHBW Engineering Cell Testbench 2020/2021
 ### Electrical Setup
 ### Mechanical Setup
-### Testing PC Setup
+### Measurement PC Setup
 app_testbench21 at _C:\\users\\public\\celltestbench\\_
 
 periphery at ports: 

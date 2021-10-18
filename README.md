@@ -1,5 +1,4 @@
-# CellTestbench
-## DHBW Engineering Cell Testbench 2020/2021
+# DHBW Engineering Cell Testbench 2020/2021
 ### Electrical Setup
 ### Mechanical Setup
 ### Testing PC Setup

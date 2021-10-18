@@ -27,7 +27,7 @@ function [charge,current,voltage,temperature,time] = dischargeCell(device_load,o
     time=[start_time];
     
     tic
-    while(meas_voltage<=charge_voltage)
+    while(meas_voltage<=discharge_voltage)
         drawnow
         if or(stop_var,over_temperature_var)
             break;

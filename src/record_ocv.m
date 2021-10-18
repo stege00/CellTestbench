@@ -6,7 +6,7 @@ function record_ocv(com_load,com_psupply,com_temperature,discharge_voltage,charg
     % set up serial devices and start values
     device_load=serial(com_load,'BaudRate',115200);
     obj_load=load_act;
-    device_psupply=serial(com_psupply,'BaudRate',57600);
+    device_psupply=serial(com_psupply,'BaudRate',57600,'Parity','odd');
     obj_psupply=psupply_act;
     set_psupplyRemote(obj_psupply,device_psupply,1);
     device_temperature=serialport(com_temperature,9600);

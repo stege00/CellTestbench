@@ -7,7 +7,7 @@ function run_profile(com_load,com_psupply,com_temperature,discharge_voltage,char
     % set up serial devices and start values
     device_load=serial(com_load,'BaudRate',115200);
     obj_load=load_act;
-    device_psupply=serial(com_psupply,'BaudRate',57600);
+    device_psupply=serial(com_psupply,'BaudRate',57600,'Parity','odd');
     obj_psupply=psupply_act;
     device_temperature=serialport(com_temperature,9600);
     start_charge=0;

@@ -3,7 +3,7 @@
 ### Electrical Setup
 ### Mechanical Setup
 ### Testing PC Setup
-app_testbench21 at *C:\users\public\celltestbench\/*
+app_testbench21 at _C:\\users\\public\\celltestbench\\_
 with periphery at ports:
 COM3 MPP
 COM4 Netzteile

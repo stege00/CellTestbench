@@ -1,0 +1,29 @@
+@startuml software_setup
+start
+-> start matlab app;
+repeat
+    fork
+    :temperature \nmeasurement;
+    fork again
+    switch(user input in GUI)
+    case(charge cell)
+        :charge cell to specified \nvoltage, until the charging \ncurrent is below the threshold;
+    case(discharge cell)
+        :discharge cell to specified \nvoltage, until the discharging \ncurrent is below the threshold;
+    case(measure capacity)
+        :run two charge-discharge \ncycles on the cell and measure \nthe the difference in charge;
+    case(record ocv)
+        :1. charge the cell \n2. in a loop discharge the cell for a given \ntime period with a given current and wait \nfor a given time with an open circuit;
+    case(charge to SOC)
+        :1. discharge cell \n2. charge cell until given \nstate of charge is reached;
+    case(run profile)
+        :in a loop run a given profile \nof currents on the cell with \nspecified frequency;
+
+
+    endswitch
+    end fork
+    :save data;
+repeat while (new test?) is (yes) not (no / close app)
+:close serial ports;
+end
+@enduml

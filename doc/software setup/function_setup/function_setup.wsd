@@ -1,0 +1,16 @@
+@startuml charge_cell
+
+partition charge_cell {
+(*)-down->initialisation
+-down->"charge with constant current" as b
+note left: until cell voltage \nreaches charge voltage
+-down->"charge with constant voltage" as c
+note left: until cell current \nis small enough
+-down->finish
+}
+initialisation -right-> [create object\n\nset_remote on\nset_output off\nset_voltage to ovp\nset_current to charge current] powersupply_act
+initialisation -right-> [create object\n\nset_input off] load_act
+b -right->[set_output on\n\n get meas_values] powersupply_act
+c -right->[get meas_values] powersupply_act
+finish -right->[set_output off] powersupply_act
+@enduml

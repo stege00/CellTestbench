@@ -34,13 +34,22 @@ classdef plot_controller
             % needs: obj,charge,voltage,current,temperature,time
             subplot(2,2,1);
             plot(time,charge);
+            xlabel('time / s');
+            ylabel('charge / C');
+            title('Cell charge over time');
             subplot(2,2,2);
             plot(time,temperature);
+            xlabel('time / s');
+            ylabel('temperature / °C');
+            title('Cell temperature over time');
             subplot(2,2,[3,4]);
+            xlabel('time / s');
             yyaxis left
             plot(time,voltage);
+            ylabel('voltage / V')
             yyaxis right
             plot(time,current);
+            ylabel('current / A')
             legend('voltage','current')
         end
     end

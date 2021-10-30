@@ -2,7 +2,8 @@ function record_ocv(com_load,com_psupply,com_temperature,discharge_voltage,charg
 % record_ocv: records open circuit voltage curves of cell
     global stop_var
     global over_temperature_var
-
+    discharge_time=str2double(discharge_time);
+    ocv_time=str2double(ocv_time);
     % set up serial devices and start values
     device_load=serial(com_load,'BaudRate',115200);
     obj_load=load_act;
@@ -16,7 +17,7 @@ function record_ocv(com_load,com_psupply,com_temperature,discharge_voltage,charg
     generate_plots(plot_ctrl);
 
     % charge cell to get into starting conditions to record ocv
-    chargeCell(device_load,obj_load,device_psupply,obj_psupply,device_temperature,charge_voltage,charge_current,start_charge,start_time,end_current,plot_ctrl)
+    charge_cell(device_load,obj_load,device_psupply,obj_psupply,device_temperature,charge_voltage,charge_current,start_charge,start_time,end_current,plot_ctrl)
 
     meas_voltage=meas_loadVoltage(obj_load,device_load);
     meas_current=meas_loadCurrent(obj_load,device_load);

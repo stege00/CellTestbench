@@ -1,4 +1,4 @@
-function [charge,current,voltage,temperature,time] = dischargeCell(device_load,obj_load,device_psupply,obj_psupply,device_temperature,discharge_voltage,discharge_current,start_charge,start_time,end_current,plot_ctrl)
+function [charge,current,voltage,temperature,time] = discharge_cell(device_load,obj_load,device_psupply,obj_psupply,device_temperature,discharge_voltage,discharge_current,start_charge,start_time,end_current,plot_ctrl)
 %dischargeCell: discharges Cell with constant current (discharge_current) until discharge_voltage is
 %reached. Discharges with constant voltage until end_current is reached.
 %Returns data to charge, current, voltage and temperature over time.
@@ -25,9 +25,9 @@ function [charge,current,voltage,temperature,time] = dischargeCell(device_load,o
     elapsed_time=toc;
     
     time=[start_time];
-    
+    set_loadInput(obj_load,device_load,1);
     tic
-    while(meas_voltage<=discharge_voltage)
+    while(meas_voltage>=discharge_voltage)
         drawnow
         if or(stop_var,over_temperature_var)
             break;
@@ -44,7 +44,7 @@ function [charge,current,voltage,temperature,time] = dischargeCell(device_load,o
         update_plots(plot_ctrl,charge,voltage,current,temperature,time)
     end 
     set_loadMode(obj_load,device_load,1);
-    while(meas_current<=end_current)
+    while(meas_current>=end_current)
         drawnow
         if or(stop_var,over_temperature_var)
             break;

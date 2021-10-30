@@ -3,11 +3,11 @@ function T = temp_calc(channel)
 % calculate temperature via defined constants
 global over_temperature_var
 
-% constants for temperature calculation
+% constants for temperature calculation (incl. error margin)
 B_coeff=3435;
 T_0=298.15;
 U_q=4.096;
-R_ref=12000*0.99;
+R_ref=12000*0.99;           % Resistance at 25 °C
 R_pulldown=12000*1.1;
 
 flush(channel)
@@ -34,5 +34,6 @@ end
 if max(T)>=60
     over_temperature_var=1;
 end
+T=max(T)
 end
 

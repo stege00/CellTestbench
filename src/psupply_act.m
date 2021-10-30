@@ -93,4 +93,7 @@ classdef psupply_act
             temp1=dec2bin(value(1),8);
             temp2=dec2bin(value(2),8);
             temp=strcat(temp1,temp2);
+            out=bin2dec(temp);
         end
+    end
+end
